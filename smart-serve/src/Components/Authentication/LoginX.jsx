@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import classes from './Login.module.css';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 const LoginFormx = () => {
   const [username, setUsername] = useState('');
@@ -80,9 +80,9 @@ const LoginFormx = () => {
           Login
         </button>
 
-        <a href="#" className={classes.forgot_password}>
+        <Link to="/Forgotpassword" className={classes.forgot_password}>
           Forgot your password
-        </a>
+        </Link>
       </form>
     </div>
   );

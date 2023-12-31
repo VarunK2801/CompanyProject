@@ -4,10 +4,11 @@
 import SpecificData from "./Components/SpecificData"
 import Dashboard from "./Components/Dashboard"
 import { Route, Routes } from "react-router-dom"
+import ForgotPassword from "./Components/Authentication/ForgotPassword"
 
 
   function App() {
-    
+
     return (
       <>
       
@@ -16,6 +17,7 @@ import { Route, Routes } from "react-router-dom"
         <Route path='/Login' element={<LoginFormx/>}/>
         <Route path='/Userdata' element={<UserData/>}/>
         <Route path='/sortedData' element={<SpecificData/>}/>
+        <Route path='/Forgotpassword' element={<ForgotPassword/>}/>
       </Routes>
        
       </>
